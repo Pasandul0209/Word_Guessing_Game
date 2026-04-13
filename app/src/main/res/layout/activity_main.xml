@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView android:id="@+id/tvWelcome"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView android:id="@+id/tvLevel"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView android:id="@+id/tvScore"
+                android:text="Score: 100"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView android:id="@+id/tvTimer"
+                android:text="Time: 0s"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView android:id="@+id/tvAttempts"
+            android:text="Attempts left: 10"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView android:id="@+id/tvWordDisplay"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:letterSpacing="0.3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView android:id="@+id/tvStatus"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"/>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView android:text="Guess the Word"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText android:id="@+id/etGuess"
+            android:hint="Type your guess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"/>
+
+        <Button android:id="@+id/btnGuess"
+            android:text="Submit Guess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"/>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView android:text="Clue Options"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <EditText android:id="@+id/etLetter"
+                android:hint="Letter"
+                android:maxLength="1"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <Button android:id="@+id/btnCheckLetter"
+                android:text="Check Letter (-5pts)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <Button android:id="@+id/btnWordLength"
+            android:text="Word Length (-5pts)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+
+        <Button android:id="@+id/btnTip"
+            android:text="Get Tip - available after 5 wrong guesses (-10pts)"
+            android:enabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView android:id="@+id/tvTip"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"/>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginBottom="16dp"/>
+
+        <Button android:id="@+id/btnLeaderboard"
+            android:text="View Leaderboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>

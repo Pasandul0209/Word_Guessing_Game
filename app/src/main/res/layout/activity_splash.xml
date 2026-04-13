@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:text="Word Guessing Game"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:text="Enter your name to begin"
+        android:textSize="16sp"
+        android:textColor="#555555"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:hint="Your name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:text="Start Game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
