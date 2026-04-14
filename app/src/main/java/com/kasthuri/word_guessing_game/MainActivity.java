@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         btnTip         = findViewById(R.id.btnTip);
         btnLeaderboard = findViewById(R.id.btnLeaderboard);
 
-        tvWelcome.setText("Hello, " + playerName + "!");
+        tvWelcome.setText("Hello, " + playerName + " Welcome!");
 
         fetchNewWord();
 
