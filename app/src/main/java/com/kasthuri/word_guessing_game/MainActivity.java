@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
                 "flame", "globe", "honey", "ivory", "joker"};
         secretWord = fallback[(int) (Math.random() * fallback.length)];
         tvWordDisplay.setText(getWordMask());
-        tvStatus.setText("Guess the word here!");
+        tvStatus.setText("Guess the word!");
         startTimer();
     }
 
