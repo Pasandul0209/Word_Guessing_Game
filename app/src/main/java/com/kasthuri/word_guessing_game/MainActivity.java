@@ -170,7 +170,7 @@ public class MainActivity extends AppCompatActivity {
             stopTimer();
             gameOver = true;
             tvWordDisplay.setText(secretWord.toUpperCase());
-            tvStatus.setText("Correct! Well done., " + playerName + "!");
+            tvStatus.setText("Correct! Well done.., " + playerName + "!");
             submitScore();
             level++;
             new Handler().postDelayed(this::fetchNewWord, 2500);
