@@ -1,5 +1,4 @@
 package com.kasthuri.word_guessing_game;
-
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -179,7 +178,7 @@ public class MainActivity extends AppCompatActivity {
             score = Math.max(0, score - 10);
             updateUI();
 
-            if (attemptsLeft <= 5 && !tipUsed) {
+            if (attemptsLeft <= 7 && !tipUsed) {
                 btnTip.setEnabled(true);
             }
 
@@ -228,7 +227,7 @@ public class MainActivity extends AppCompatActivity {
         if (tipUsed || gameOver) return;
         tipUsed = true;
         btnTip.setEnabled(false);
-        score = Math.max(0, score - 10);
+        score = Math.max(0, score - 15);
         updateUI();
 
         String url = "https://api.api-ninjas.com/v1/rhyme?word=" + secretWord;
@@ -257,7 +256,6 @@ public class MainActivity extends AppCompatActivity {
 
         Volley.newRequestQueue(this).add(req);
     }
-
     private void submitScore() {
         String privateKey = "Mjwkxl52Kk-HrYYf0gKJNA3Mr18niikkeLhCtVtaCkkg";
         String name = playerName.replace(" ", "%20");

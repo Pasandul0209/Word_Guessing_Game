@@ -133,7 +133,7 @@
             android:layout_marginBottom="10dp"/>
 
         <Button android:id="@+id/btnTip"
-            android:text="Get Tip - available after 5 wrong guesses (-10pts)"
+            android:text="Get Tip - available after 3 wrong guesses (-15pts)"
             android:enabled="false"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
