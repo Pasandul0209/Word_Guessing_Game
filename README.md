@@ -34,7 +34,3 @@ An Android word guessing game built with Java in Android Studio.
 - Getting a tip costs 15 points (available after 3 wrong guesses)
 - Guess correctly to advance to next level with longer words
 - Run out of attempts or points — game resets
-
->> Screenshots
-
-
