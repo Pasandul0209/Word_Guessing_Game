@@ -26,11 +26,6 @@ An Android word guessing game built with Java in Android Studio.
 - random word-api.herokuapp.com  for Fetching random secret word 
 - api-ninjas.com for Getting rhyming word for tip 
 
->> Screenshots
-
-![Onboarding](screenshots/Onboarding%20Screen.png) ![Game](screenshots/Main%20Game%20Screen.png) ![Wrong Guess](screenshots/Wrong%20Guess.png)
-![Correct](screenshots/Correct%20Guessing.png) ![Letter](screenshots/Letter%20Check.png)![Tip](screenshots/Tip.png) 
-
 >> Game Rules
 - Player starts with 100 points
 - Each wrong guess costs 10 points
