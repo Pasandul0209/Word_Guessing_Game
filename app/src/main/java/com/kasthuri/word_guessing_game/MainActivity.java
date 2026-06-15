@@ -185,7 +185,7 @@ public class MainActivity extends AppCompatActivity {
             if (attemptsLeft == 0 || score == 0) {
                 stopTimer();
                 gameOver = true;
-                tvStatus.setText("Out of attempts! The word was: " + secretWord.toUpperCase());
+                tvStatus.setText("Out of atempts! The word was: " + secretWord.toUpperCase());
                 new Handler().postDelayed(this::fetchNewWord, 3000);
             } else {
                 tvStatus.setText("Wrong guess! Try again. (-10pts)");
