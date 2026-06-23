@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void fetchNewWord() {
         resetGameState();
-        tvStatus.setText("Loading a ne word...");
+        tvStatus.setText("Loading a new word...");
 
         String url = "https://random-word-api.herokuapp.com/word?length=" + getWordLength();
 
