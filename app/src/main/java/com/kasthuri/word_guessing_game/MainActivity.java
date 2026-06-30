@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
                         JSONArray arr = new JSONArray(response);
                         secretWord = arr.getString(0).toLowerCase();
                         tvWordDisplay.setText(getWordMask());
-                        tvStatus.setText("Guess the " + secretWord.length() + "-letter waord!");
+                        tvStatus.setText("Guess the " + secretWord.length() + "-letter word!");
                         startTimer();
                     } catch (Exception e) {
                         loadFallbackWord();
