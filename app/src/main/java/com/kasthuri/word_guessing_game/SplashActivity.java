@@ -13,7 +13,7 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        SharedPreferences prefs = getSharedPreferences("WordGame", MODE_PRIVATE);
+        SharedPreferences prefs = getSharedPreferences("WordGame!", MODE_PRIVATE);
         String savedName = prefs.getString("playerName", null);
         if (savedName != null) {
             startActivity(new Intent(this, MainActivity.class));
